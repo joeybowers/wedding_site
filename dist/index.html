@@ -9,55 +9,50 @@
 		<script src="js/bootstrap.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+		<link href="css/hover.css" rel="stylesheet" media="all">
 	</head>
 	<body>
 		<div class="container">
-			<header class="row">
+			<!-- <header class="row">
 				<div class="col-xl-12 text-center text-uppercase">
 					<h1>Joey and Rachael</h1>
 					<h2>January 29th, 2017</h2>
 					<h3>Los Angeles, CA</h3>
 				</div>
-			</header>
+			</header> -->
 			<div>
-				<img class="img-responsive hero-image" alt="Main Image" src="images/newBanner.jpg" />
+				<img class="img-responsive hero-image center-block" alt="Main Image" src="images/bowersHeaderClear.jpg" />
 			</div>
 			<!-- Venue-->
 			<section class="row">
 				<div class="col-xs-6">
-					<h4>Venue</h4>
-					<img class="img-responsive img-circle" alt="Brewery Image" data-toggle="modal" data-target="#venue" src="images/rsz_IMG_4020.jpg" />
+					<img class="img-responsive img-circle hvr-glow hvr-round-corners" alt="Brewery Image" data-toggle="modal" data-target="#venue" src="images/VENUE_Thumbnail.jpg" />
 				</div>
 				<!-- Event Details-->
 				<div class="col-xs-6">
-					<h4>Event Details</h4>
-					<img class="img-responsive img-circle" alt="Event Details Image" data-toggle="modal" data-target="#eventDetails" src="images/rsz_1img_4925.jpg" />
+					<img class="img-responsive img-circle hvr-glow hvr-round-corners" alt="Event Details Image" data-toggle="modal" data-target="#eventDetails" src="images/DETAILS_Thumbnail.jpg" />
 				</div>
 			</section>
 			<!-- RSVP-->
 			<section class="row">
 				<div class="col-xs-6">
-					<h4>RSVP</h4>
 					<a href="https://docs.google.com/forms/d/e/1FAIpQLSeK5ge3mz2TNK0kHUmYprCs1dooufXsCWyo2VBpeJQ60kNHiA/viewform" target="_blank">
-					<img class="img-responsive img-circle bottom-image" alt="RSVP Image" data-toggle="modal" data-target="#rsvp" src="images/rsz_img_4022-1.jpg" /></a>
+					<img class="img-responsive img-circle hvr-glow hvr-round-corners" alt="RSVP Image" data-toggle="modal" data-target="#rsvp" src="images/RSVP_Thumbnail.jpg" /></a>
 				</div>
 			<!-- Honeyfund Registry-->
 				<div class="col-xs-6">
-					<h4>Honeyfund Registry</h4>
 					<a href="http://honeyfund.com/wedding/TeamBowers2017" target="_blank">
-					<img class="img-responsive img-circle bottom-image" alt="Honeyfund Image" data-toggle="modal" data-target="#honeyfund" src="images/rsz_img_4025.jpg" /></a>
+					<img class="img-responsive img-circle hvr-glow hvr-round-corners" alt="Honeyfund Image" data-toggle="modal" data-target="#honeyfund" src="images/REGISTRY_Thumbnail.jpg" /></a>
 				</div>
 			</section>
 			<!-- Gallery-->
 			<section class="row">
 				<div class="col-xs-6">
-					<h4>Gallery</h4>
-					<img class="img-responsive img-circle bottom-image" alt="Gallery Image 555 x 300" data-toggle="modal" data-target="#gallery" src="" />
+					<img class="img-responsive img-circle bottom-image hvr-glow hvr-round-corners" alt="Gallery Image 555 x 300" data-toggle="modal" data-target="#gallery" src="images/GALLERY_Thumbnail.jpg" />
 				</div>
 				<!-- email us-->
 				<div class="col-xs-6">
-					<h4>Email Us!</h4>
-					<img class="img-responsive img-circle bottom-image" alt="Email Us Image 555 x 300" data-toggle="modal" data-target="#emailUs" src="" />
+					<img class="img-responsive img-circle bottom-image hvr-glow hvr-round-corners" alt="Email Us Image 555 x 300" data-toggle="modal" data-target="#emailUs" src="images/CONTACT_Thumbnail.jpg" />
 				</div>
 			</section>
 			<!-- Modal 1-->
@@ -65,14 +60,14 @@
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h4 class="modal-title" id="myModalLabel1">Location</h4>
+							<h5 class="modal-title" id="myModalLabel1">Location</h5>
 						</div>
 						<div class="modal-body">
 							<img class="img-responsive" src="images/rsz_IMG_4020.jpg" alt="Project 1 Image">
 							Bonaventure Brewing Company<br>
 							404 S. Figueroa St, Los Angeles, CA 90071
 							<p>
-								<a href="http://www.bonaventurebrewing.com" target="_blank">Brewery Website</a>
+								<a class="brewery-link" href="http://www.bonaventurebrewing.com" target="_blank">Brewery Website</a>
 							</p>
 						</div>
 						<div class="modal-footer">
@@ -86,42 +81,75 @@
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h4 class="modal-title" id="myModalLabel2">Event Details</h4>
+							<h5 class="modal-title" id="myModalLabel2">Event Details</h5>
 						</div>
 						<div class="modal-body">
-							<img class="img-responsive" src="images/rsz_1img_4925.jpg" alt="Project 2 Image">
-							January 29th, 2017<br>
-							Guests arrive at 4:00pm<br>
-							Ceremony begins at 4:20pm<br>
-							Cocktail Hour at 4:45pm<br>
-							Reception opens at 5:45pm<br>
-							Dinner at 6:00pm<br>
-							Dancing until 10:00pm
+							<img class="img-responsive" src="images/DETAILS_MainImage.jpg" alt="Project 2 Image">
+							** Additional notes can go here **
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 			<!-- Gallery Modal-->
+			<div class="modal fade" id="gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="myModalLabel2">Gallery</h5>
+						</div>
+						<div class="modal-body">
+							<div class="gamma-container gamma-loading" id="gamma-container">
+
+	<ul class="gamma-gallery">
+		<li>
+			<div data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400">
+				<div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
+				<div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
+				<div data-src="images/xlarge/1.jpg" data-min-width="700"></div>
+				<div data-src="images/large/1.jpg" data-min-width="300"></div>
+				<div data-src="images/medium/1.jpg" data-min-width="200"></div>
+				<div data-src="images/small/1.jpg" data-min-width="140"></div>
+				<div data-src="images/xsmall/1.jpg"></div>
+				<noscript>
+					<img src="images/xsmall/1.jpg" alt="img01"/>
+				</noscript>
+			</div>
+		</li>
+		<li> <!-- ... --> </li>
+		<!-- ... -->
+	</ul>
+
+	<div class="gamma-overlay"></div>
+
+</div>
+							Gallery Modal
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!-- Modal 4-->
 			<div class="modal fade" id="emailUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h4 class="modal-title" id="myModalLabel2">Email Us!</h4>
+							<h5 class="modal-title" id="myModalLabel2">Email Us!</h5>
 						</div>
 						<div class="modal-body">
 							<img class="img-responsive" src="" alt="email us">
-							Make a form that will send straight to our email address
+							Make a form that will send straight to our email address. look up TypeForm
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</body>
 </html>
