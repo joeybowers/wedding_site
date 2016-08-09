@@ -10,6 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="css/hover.css" rel="stylesheet" media="all">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
   </head>
   <body>
     <div class="container">
@@ -43,7 +52,8 @@
         <!-- Event Details-->
         <div class="col-xs-6">
           <img
-            class="img-responsive img-circle hvr-glow hvr-round-corners"
+            a class="img-responsive img-circle hvr-glow hvr-round-corners fancybox"
+            href="images/DETAILS_MainImage.jpg"
             alt="Event Details Image"
             data-toggle="modal"
             data-target="#eventDetails"
@@ -85,11 +95,13 @@
       <section class="row">
         <div class="col-xs-6">
           <img
-            class="img-responsive img-circle bottom-image hvr-glow hvr-round-corners"
+            a class="img-responsive img-circle bottom-image hvr-glow hvr-round-corners fancybox"
+            rel="imageGallery"
+            href="images/rsz_img_4025.jpg"
             alt="Gallery Image 555 x 300"
             data-toggle="modal"
             data-target="#gallery"
-            src="images/GALLERY_Thumbnail.jpg"
+            src="images/GALLERY_Thumbnail.jpg"></a>
           />
         </div>
 
@@ -105,7 +117,7 @@
         </div>
       </section>
 
-      <!-- Modal 1-->
+      <!-- Venue & Lodging Modal-->
       <div
         id="venue"
         class="modal fade"
@@ -116,14 +128,32 @@
       >
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="myModalLabel1">Location</h5>
-            </div>
             <div class="modal-body">
               <img class="img-responsive" src="images/rsz_IMG_4020.jpg" alt="Project 1 Image" />
-              Bonaventure Brewing Company<br>
-              404 S. Figueroa St, Los Angeles, CA 90071
-              <p><a class="brewery-link" href="http://www.bonaventurebrewing.com" target="_blank">Brewery Website</a></p>
+              <h5><a class="brewery-link" href="http://www.bonaventurebrewing.com" target="_blank">Bonaventure Brewing Company</a><br>
+              404 S. Figueroa St, Los Angeles, CA 90071<br><br>
+
+              <strong>Hotel Accommodations</strong><br>
+                  The Bride and Groom will be staying at the
+                  <a class="la-hotel-link" href="http://www.thelahotel.com" target="_blank">LA Hotel</a><br>
+                  333 South Figueroa Street<br>
+                  Los Angeles, California 90071<br>
+                  <a class="phone-link"   href="tel:1-213-617-1133">213-617-1133</a><br><br>
+
+              <strong>PLEASE NOTE:</strong><br>
+                  We have a small room block available for the rate of $165 per night (excludes fees and taxes). Please email us if you are interested in booking this hotel so we can increase the number of rooms within the block and track how many rooms have been booked.<br><br>
+
+              <strong>Other Local Hotels </strong><br><br>
+                  <a class="westin-hotel-link" href="http://www.thebonaventure.com" target="_blank">WESTIN BONAVENTURE HOTEL</a><br>
+                  404 S Figueroa Street<br>
+                  Los Angeles, CA 90071<br>
+                  <a class="phone-link" href="tel:1-213-624-1000">213-624-1000</a><br><br>
+
+                  <a class="standard-hotel-link" href="http://www.standardhotels.com/la/properties/downtown-la.com" target="_blank">THE STANDARD DOWNTOWN LA</a><br>
+                    550 S Flower St<br>
+                    Los Angeles, CA 90071<br>
+                    <a class="phone-link" href="tel:1-800-916-4339">800-916-4339</a><br>
+            </h5>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -131,82 +161,7 @@
           </div>
         </div>
       </div>
-
-      <!-- Modal 2-->
-      <div
-        id="eventDetails"
-        class="modal fade"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="myModalLabel2"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="myModalLabel2">Event Details</h5>
-            </div>
-            <div class="modal-body">
-              <img class="img-responsive" src="images/DETAILS_MainImage.jpg" alt="Project 2 Image">
-              ** Additional notes can go here **
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Gallery Modal-->
-      <div
-        class="modal fade"
-        id="gallery"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="myModalLabel4"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="myModalLabel2">Gallery</h5>
-            </div>
-            <div class="modal-body">
-              <div class="gamma-container gamma-loading" id="gamma-container">
-                <ul class="gamma-gallery">
-                  <li>
-                    <div data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400">
-                      <div data-src="images/xxxlarge/1.jpg" data-min-width="1300"></div>
-                      <div data-src="images/xxlarge/1.jpg" data-min-width="1000"></div>
-                      <div data-src="images/xlarge/1.jpg" data-min-width="700"></div>
-                      <div data-src="images/large/1.jpg" data-min-width="300"></div>
-                      <div data-src="images/medium/1.jpg" data-min-width="200"></div>
-                      <div data-src="images/small/1.jpg" data-min-width="140"></div>
-                      <div data-src="images/xsmall/1.jpg"></div>
-                      <noscript><img src="images/xsmall/1.jpg" alt="img01" /></noscript>
-                    </div>
-                  </li>
-                  <li></li>
-                </ul>
-                <div class="gamma-overlay"></div>
-              </div>
-
-              Gallery Modal
-            </div>
-            <div class="modal-footer">
-              <button
-                class="btn btn-default"
-                type="button"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Modal 4-->
+      <!-- Contact Us Modal-->
       <div
         id="emailUs"
         class="modal fade"
@@ -217,12 +172,15 @@
       >
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="myModalLabel2">Email Us!</h5>
-            </div>
             <div class="modal-body">
-              <img class="img-responsive" src="" alt="email us" />
-              Make a form that will send straight to our email address. look up TypeForm
+              <h2>Send us an email!</h2>
+                <form action="MAILTO:jbowers@adartco.com" method="post" enctype="text/plain">
+                <p>Feel free to hit us up with any questions or concerns!</p>
+                <input type="submit" value="Email">
+                </form>
+              <h2>Contact us by phone!</h2>
+                <p>Joey: <a class="phone-link" href="tel:1-323-929-9183">323-929-9183</a><br>
+                Rachael: <a class="phone-link" href="tel:1-909-900-8189">909-900-8189</a></p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -231,5 +189,10 @@
         </div>
       </div>
     </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  </script>
   </body>
 </html>

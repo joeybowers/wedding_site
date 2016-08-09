@@ -10,14 +10,8 @@ img {
   max-width: 100%;
 }
 
-/*.img-circle:hover {
-  opacity: .8;
-  cursor: default;
-}*/
-
 .hero-image {
   margin-top: 20px;
-  /*margin-bottom: 20px;*/
 }
 
 .img-circle {
@@ -29,10 +23,14 @@ a {
   cursor: default;
 }
 
-.brewery-link {
+.brewery-link, .la-hotel-link, .westin-hotel-link, .standard-hotel-link, .phone-link {
   cursor: pointer;
 }
 
+.modal-content {
+  font-family: "Abel", sans-serif;
+  background-color: #e0e0eb;
+}
  /*Under 600px*/
 @media screen and (max-width: 600px) {
   img {
